@@ -1,0 +1,42 @@
+﻿@page
+@model AlchemyPages.Pages.Ingredients.IndexModel
+@{
+}
+
+<h2 class="text-center mb-3">Ingredients</h2>
+<a class="btn btn-primary" asp-page="/Ingredients/Create">New Ingredient</a> 
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Type</th>
+            <th>Element</th>
+            <th>Description</th>
+            <th>Image File Location</th>
+            <th>Quality I</th>
+            <th>Quality II</th>
+            <th>Quality III</th>
+        </tr>
+    </thead>
+    <tbody class="table-group-divider">
+        @foreach(var ingredient in Model.ingredientList){
+            <tr>
+                <td>@ingredient.Id</td>
+                <td>@ingredient.Name</td>
+                <td>@ingredient.Type</td>
+                <td>@ingredient.Element</td>
+                <td>@ingredient.Description</td>
+                <td>@ingredient.qualityOne</td>
+                <td>@ingredient.qualityTwo</td>
+                <td>@ingredient.qualityThree</td>
+                <td style=" white-space:nowrap">
+                    <a class="btn btn-primary btn-sm" asp-page="/Ingredients/Edit" asp-route-id="@ingredient.Id">Edit</a>
+                    <a class="btn btn-danger btn-sm" asp-page="/Ingredients/Delete" asp-route-id="@ingredient.Id">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+
+
+</table>
