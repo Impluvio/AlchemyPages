@@ -4,7 +4,9 @@ using AlchemyPages.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.Diagnostics;
+using System.IO;
 using System.Security.Cryptography.Xml;
+using System.Threading.Tasks;
 
 namespace AlchemyPages.Pages.Ingredients
 {
@@ -12,23 +14,38 @@ namespace AlchemyPages.Pages.Ingredients
     {
         private readonly ApplicationDBContext context;
         [BindProperty] public IngredientCreate ingredientCreate { get; set; }
+        [BindProperty] public IFormFile ImageFile { get; set; }
 
-        public CreateModel(ApplicationDBContext context)
+        private readonly IWebHostEnvironment _environment;
+
+        public CreateModel(ApplicationDBContext context, IWebHostEnvironment environment)
         {
             this.context = context;
+            _environment = environment;
         }
         public void OnGet()
         {
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
             {
-
                 Debug.WriteLine("not a valid model");
                 return Page();
+            }
 
+            if (ImageFile != null && ImageFile.Length > 0)
+            {
+                var fileName = Guid.NewGuid().ToString() + Path.GetExtension(ImageFile.FileName);
+                var filePath = Path.Combine(_environment.WebRootPath, "images", fileName);
+
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await ImageFile.CopyToAsync(stream);
+                }
+
+                ingredientCreate.imageFileLocation = "/images/" + fileName;
 
             }
 
@@ -48,7 +65,7 @@ namespace AlchemyPages.Pages.Ingredients
             Debug.WriteLine($"ingredient Name is {Ingredient.Name}");
 
             context.Ingredients.Add(Ingredient);
-            context.SaveChanges();
+            await context.SaveChangesAsync();
 
             return RedirectToPage("/Ingredients/Index");
         } 

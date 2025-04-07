@@ -170,3 +170,4 @@ C:\Users\adamc\source\repos\AlchemyPages\AlchemyPages\obj\Debug\net8.0\refint\Al
 C:\Users\adamc\source\repos\AlchemyPages\AlchemyPages\obj\Debug\net8.0\AlchemyPages.pdb
 C:\Users\adamc\source\repos\AlchemyPages\AlchemyPages\obj\Debug\net8.0\AlchemyPages.genruntimeconfig.cache
 C:\Users\adamc\source\repos\AlchemyPages\AlchemyPages\obj\Debug\net8.0\ref\AlchemyPages.dll
+C:\Users\adamc\source\repos\AlchemyPages\AlchemyPages\obj\Debug\net8.0\AlchemyPages.sourcelink.json
