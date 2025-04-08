@@ -13,8 +13,16 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\images\\69f4f23d-7ca7-499d-87de-9b968a2022b8.jpg",
+      "PackagePath": "staticwebassets\\images\\69f4f23d-7ca7-499d-87de-9b968a2022b8.jpg"
+    },
+    {
       "Id": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\images\\bc8e389a-c57a-4439-8d73-7d0710caa368.png",
       "PackagePath": "staticwebassets\\images\\bc8e389a-c57a-4439-8d73-7d0710caa368.png"
+    },
+    {
+      "Id": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\images\\d16e0b79-89eb-49f0-9913-b32f6f5544d9.png",
+      "PackagePath": "staticwebassets\\images\\d16e0b79-89eb-49f0-9913-b32f6f5544d9.png"
     },
     {
       "Id": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\js\\site.js",

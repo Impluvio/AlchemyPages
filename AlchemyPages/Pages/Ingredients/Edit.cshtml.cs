@@ -11,14 +11,17 @@ namespace AlchemyPages.Pages.Ingredients
 
         [BindProperty] public IngredientCreate ingredientCreate { get; set; } = new IngredientCreate();
 
+        [BindProperty] public IFormFile ImageFile {get; set;}
+
         public Ingredient Ingredient { get; set; } = new();
 
         private readonly ApplicationDBContext context;
+        private readonly IWebHostEnvironment _environment;
 
-        public EditModel(ApplicationDBContext context)
+        public EditModel(ApplicationDBContext context, IWebHostEnvironment environment)
         {
             this.context = context;
-
+            _environment = environment; 
         }
 
         public IActionResult OnGet(int id)
