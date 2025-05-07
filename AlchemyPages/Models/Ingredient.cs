@@ -13,7 +13,9 @@
 
         public string qualityOne { get; set; } = "";
         public string qualityTwo { get; set; } = "";
-        public string qualityThree { get; set; } = ""; 
+        public string qualityThree { get; set; } = "";
+
+        public ICollection<IngredientEncounter> IngredientEncounters { get; set; }
 
     }
 }

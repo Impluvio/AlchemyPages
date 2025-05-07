@@ -1,0 +1,45 @@
+﻿@page
+@model AlchemyPages.Pages.Players.IndexModel
+@{
+}
+<h2 class="text-center mb-2">Players</h2>
+<a class="btn btn-primary" asp-page="/Players/CreatePlayer">New Player</a>
+
+<div style="overflow-x:auto;">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Player Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th style="width:120px;">Actions</th>
+
+            </tr>
+        </thead>
+        <tbody class="table-group-divider">
+            @foreach (var player in Model.playerList) @* check to see if this is correct, may need to be direct - 7/5/25 it is correct  *@
+            {
+                <tr>
+                    <td>@player.PlayerID</td>
+                    <td>@player.FirstName</td>
+                    <td>@player.LastName</td>
+
+                    <td style="white-space:nowrap">
+                    <a class=" btn btn-primary btn-sm" asp-page="/Players/EditPlayer" asp-route-id="@player.PlayerID"> Edit </a>   
+                    <a class=" btn btn-danger btn-sm" asp-page="/Players/Delete" asp-route-id="@player.PlayerID"> Delete </a>
+
+
+                    </td>
+
+
+                </tr>
+            }
+            
+
+        </tbody>
+    </table>
+
+</div>
+
+@* 
+button to create and delete and view needed *@

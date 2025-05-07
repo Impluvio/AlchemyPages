@@ -1,0 +1,51 @@
+﻿@page
+@model AlchemyPages.Pages.Players.CreatePlayerModel
+@{
+}
+
+<h2 class="text-center mb-4">New Player</h2>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="row g-2 mb-3">
+
+        <div class="col-lg-6">
+            
+            <div class="h-100">
+                <div class="card-header">
+                    Player Details
+                </div>
+
+            <div class="card-body">
+
+                <div class="row mb-3">
+                    <label class="col-sm-4 col-form-label"> First Name </label>
+                    <div class="col-sm-8">
+                        <input class="form-control" asp-for="playerCreate.FirstName">
+                        <span asp-validation-for="playerCreate.FirstName" class=" text-danger"> </span>
+                    </div>
+                </div>
+                    
+                <div class="row mb-3">
+                    <label class="col-sm-4 col-form-label"> Last Name </label>
+                    <div class="col-sm-8">
+                        <input class="form-control" asp-for="playerCreate.LastName">
+                        <span asp-validation-for="playerCreate.LastName" class=" text-danger"> </span>
+                    </div>
+                </div>
+                     
+            </div>
+            
+
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <button type="submit" class="btn btn-primary me-2">Submit</button>
+    <a class="btn btn-outline-primary" asp-page="/Players/Index" role="button">cancel</a>
+
+</form>
