@@ -1,0 +1,18 @@
+﻿@page
+@model AlchemyPages.Pages.Players.DeletePlayerModel
+@{
+}
+
+<h2 class="text-center mb-3 " style="color: red">Are you sure you want to delete this player? </h2>
+
+<div>
+    <p class="text-centre mb-3" style="color: dimgrey">@Model.Player.FirstName @Model.Player.LastName</p>
+
+    <form method="post">
+
+        <input type="hidden" asp-for="Player.PlayerID" />
+        <button type="submit" class="btn btn-danger"> Yes, Delete</button>
+        <a asp-page="Player/Index" class="btn btn-secondary">Cancel</a>
+    </form>
+
+</div>

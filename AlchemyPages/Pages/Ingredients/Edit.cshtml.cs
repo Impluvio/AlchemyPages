@@ -3,11 +3,16 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using AlchemyPages.Services;
 using AlchemyPages.Models;
 using System.Xml.Linq;
+using Microsoft.Data.SqlClient.DataClassification;
+using System.Diagnostics;
 
 namespace AlchemyPages.Pages.Ingredients
 {
     public class EditModel : PageModel
     {
+        // Problem in this script, process is Form, creates instance of PlayerCreate / IngredientCreate model which feeds to class player/Ingredient here instance ingredient takes in data and is then updated before pushed to sql. either
+        // the script is unclear - so player instance should be called something else then updated. 
+
 
         [BindProperty] public IngredientCreate ingredientCreate { get; set; } = new IngredientCreate();
 
@@ -47,5 +52,33 @@ namespace AlchemyPages.Pages.Ingredients
 
             return Page();
         }
+
+
+        public async Task<IActionResult> OnPostAsync(int id)
+        {
+            var ingredientToBeEdited = context.Ingredients.Find(id);
+
+            if (ingredientToBeEdited == null)
+            {
+                Debug.WriteLine("not a valid model");
+                return Page();
+            }
+            ingredientToBeEdited.Name = ingredientCreate.Name;
+            ingredientToBeEdited.Type = ingredientCreate.Type;
+            ingredientToBeEdited.Element = ingredientCreate.Element;
+            ingredientToBeEdited.Description = ingredientCreate.Description;
+            ingredientToBeEdited.imageFileLocation = ingredientCreate.imageFileLocation;
+            ingredientToBeEdited.qualityOne = ingredientCreate.qualityOne;
+            ingredientToBeEdited.qualityTwo = ingredientCreate.qualityTwo;
+            ingredientToBeEdited.qualityThree = ingredientCreate.qualityThree;
+
+
+            await context.SaveChangesAsync();
+            return RedirectToPage("/Ingredients/Index");
+
+            return Page();
+        }
+
+    
     }
 }

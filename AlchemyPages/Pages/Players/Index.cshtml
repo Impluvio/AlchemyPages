@@ -25,9 +25,9 @@
                     <td>@player.LastName</td>
 
                     <td style="white-space:nowrap">
-                    <a class=" btn btn-primary btn-sm" asp-page="/Players/EditPlayer" asp-route-id="@player.PlayerID"> Edit </a>   
-                    <a class=" btn btn-danger btn-sm" asp-page="/Players/Delete" asp-route-id="@player.PlayerID"> Delete </a>
-
+                    <a class=" btn btn-primary btn-sm" asp-page="/Players/EditPlayer" asp-route-PlayerID="@player.PlayerID"> Edit </a>   
+                    <a class=" btn btn-danger btn-sm" asp-page="/Players/DeletePlayer" asp-route-PlayerID="@player.PlayerID"> Delete </a> @* currently functionless *@
+                    <a class="btn btn-sm" style="background-color: green; color: white;" asp-page="/Players/PlayerView" asp-route-PlayerID="@player.PlayerID">View craftbook</a> @* Chage asp page to variable for that specific player *@
 
                     </td>
 
@@ -41,5 +41,4 @@
 
 </div>
 
-@* 
-button to create and delete and view needed *@
+

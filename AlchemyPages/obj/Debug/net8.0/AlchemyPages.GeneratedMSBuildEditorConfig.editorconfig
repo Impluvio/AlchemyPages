@@ -52,12 +52,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyc1xDcmVhdGVQbGF5ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/adamc/source/repos/AlchemyPages/AlchemyPages/Pages/Players/DeletePlayer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyc1xEZWxldGVQbGF5ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/adamc/source/repos/AlchemyPages/AlchemyPages/Pages/Players/EditPlayer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyc1xFZGl0UGxheWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/adamc/source/repos/AlchemyPages/AlchemyPages/Pages/Players/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/adamc/source/repos/AlchemyPages/AlchemyPages/Pages/Players/PlayerView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUGxheWVyc1xQbGF5ZXJWaWV3LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/adamc/source/repos/AlchemyPages/AlchemyPages/Pages/Privacy.cshtml]

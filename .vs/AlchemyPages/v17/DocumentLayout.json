@@ -3,28 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\pages\\players\\editplayer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\pages\\players\\editplayer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\pages\\ingredients\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\pages\\ingredients\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\pages\\ingredients\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\pages\\ingredients\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\pages\\players\\editplayer.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\pages\\players\\editplayer.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\services\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\services\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\pages\\players\\createplayer.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\pages\\players\\createplayer.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\pages\\ingredients\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\pages\\ingredients\\create.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\models\\playercreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\models\\playercreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\pages\\players\\createplayer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\pages\\players\\createplayer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|c:\\users\\adamc\\source\\repos\\alchemypages\\alchemypages\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0D1A015-C0A2-4CC5-9A3B-E8A81820E12A}|AlchemyPages\\AlchemyPages.csproj|solutionrelative:alchemypages\\models\\ingredient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,79 +43,66 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "PlayerCreate.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Models\\PlayerCreate.cs",
-              "RelativeDocumentMoniker": "AlchemyPages\\Models\\PlayerCreate.cs",
-              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Models\\PlayerCreate.cs",
-              "RelativeToolTip": "AlchemyPages\\Models\\PlayerCreate.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Title": "EditPlayer.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Players\\EditPlayer.cshtml.cs",
+              "RelativeDocumentMoniker": "AlchemyPages\\Pages\\Players\\EditPlayer.cshtml.cs",
+              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Players\\EditPlayer.cshtml.cs",
+              "RelativeToolTip": "AlchemyPages\\Pages\\Players\\EditPlayer.cshtml.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAkwDkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T17:29:53.236Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CreatePlayer.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Players\\CreatePlayer.cshtml.cs",
-              "RelativeDocumentMoniker": "AlchemyPages\\Pages\\Players\\CreatePlayer.cshtml.cs",
-              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Players\\CreatePlayer.cshtml.cs",
-              "RelativeToolTip": "AlchemyPages\\Pages\\Players\\CreatePlayer.cshtml.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAADwvzAAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T16:19:53.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Create.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Ingredients\\Create.cshtml.cs",
-              "RelativeDocumentMoniker": "AlchemyPages\\Pages\\Ingredients\\Create.cshtml.cs",
-              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Ingredients\\Create.cshtml.cs",
-              "RelativeToolTip": "AlchemyPages\\Pages\\Ingredients\\Create.cshtml.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowEMAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T15:07:11.746Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CreatePlayer.cshtml",
-              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Players\\CreatePlayer.cshtml",
-              "RelativeDocumentMoniker": "AlchemyPages\\Pages\\Players\\CreatePlayer.cshtml",
-              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Players\\CreatePlayer.cshtml",
-              "RelativeToolTip": "AlchemyPages\\Pages\\Players\\CreatePlayer.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-07T09:49:39.401Z",
+              "WhenOpened": "2025-05-11T22:46:10.886Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "EditPlayer.cshtml",
+              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Players\\EditPlayer.cshtml",
+              "RelativeDocumentMoniker": "AlchemyPages\\Pages\\Players\\EditPlayer.cshtml",
+              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Players\\EditPlayer.cshtml",
+              "RelativeToolTip": "AlchemyPages\\Pages\\Players\\EditPlayer.cshtml",
+              "ViewState": "AgIAACQAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T22:46:05.954Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Ingredients\\Edit.cshtml",
+              "RelativeDocumentMoniker": "AlchemyPages\\Pages\\Ingredients\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Ingredients\\Edit.cshtml",
+              "RelativeToolTip": "AlchemyPages\\Pages\\Ingredients\\Edit.cshtml",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAAAJMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-05-11T22:35:02.024Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Ingredients\\Edit.cshtml.cs",
+              "RelativeDocumentMoniker": "AlchemyPages\\Pages\\Ingredients\\Edit.cshtml.cs",
+              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Pages\\Ingredients\\Edit.cshtml.cs",
+              "RelativeToolTip": "AlchemyPages\\Pages\\Ingredients\\Edit.cshtml.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAswFQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T15:10:54.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Notes.cs",
               "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Services\\Notes.cs",
               "RelativeDocumentMoniker": "AlchemyPages\\Services\\Notes.cs",
               "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Services\\Notes.cs",
               "RelativeToolTip": "AlchemyPages\\Services\\Notes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T22:44:07.784Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Ingredient.cs",
-              "DocumentMoniker": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Models\\Ingredient.cs",
-              "RelativeDocumentMoniker": "AlchemyPages\\Models\\Ingredient.cs",
-              "ToolTip": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\Models\\Ingredient.cs",
-              "RelativeToolTip": "AlchemyPages\\Models\\Ingredient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-07T10:44:47.808Z",
+              "WhenOpened": "2025-05-11T15:36:03.109Z",
               "EditorCaption": ""
             }
           ]
