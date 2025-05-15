@@ -17,7 +17,7 @@ namespace AlchemyPages.Pages.Ingredients
             this.context = context;
         }
 
-        public async Task<IActionResult> OnGet(int Id)
+        public async Task<IActionResult> OnGetAsync(int Id)
         {
             
             {
@@ -34,7 +34,7 @@ namespace AlchemyPages.Pages.Ingredients
 
         }
 
-        public async Task <IActionResult> OnPost()
+        public async Task <IActionResult> OnPostAsync()
         {
             var ingredientToDelete = await context.Ingredients.FindAsync(Ingredient.Id);
 

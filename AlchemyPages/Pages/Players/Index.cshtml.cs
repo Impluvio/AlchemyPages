@@ -16,11 +16,7 @@ namespace AlchemyPages.Pages.Players
             this.context = context;
         }
 
-        //db context
-        // pull list from db.players
-        // on get ref. 
-
-        public async Task<IActionResult> OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
             playerList = await context.Players.OrderByDescending(i => i.PlayerID).ToListAsync();
 

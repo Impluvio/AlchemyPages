@@ -24,9 +24,9 @@ namespace AlchemyPages.Pages.Players
 
 
 
-        public IActionResult OnGet(int PlayerID)
+        public async Task<IActionResult> OnGetAsync(int PlayerID)
         {
-            var displayPlayerToBeEdited = context.Players.Find(PlayerID);
+            var displayPlayerToBeEdited = await context.Players.FindAsync(PlayerID);
 
             if (displayPlayerToBeEdited == null)
             {

@@ -17,9 +17,9 @@ namespace AlchemyPages.Pages.Players
         }
 
 
-        public IActionResult OnGet(int PlayerID)
+        public async Task<IActionResult> OnGetAsync(int PlayerID)
         {
-            Player = context.Players.Find(PlayerID);
+            Player = await context.Players.FindAsync(PlayerID);
 
             if (Player == null)
             {
@@ -29,9 +29,9 @@ namespace AlchemyPages.Pages.Players
 
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
-            var playerToDelete = context.Players.Find(Player.PlayerID);
+            var playerToDelete = await context.Players.FindAsync(Player.PlayerID);
 
             if (playerToDelete != null)
             {

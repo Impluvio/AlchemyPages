@@ -1,0 +1,20 @@
+﻿@page
+@model AlchemyPages.Pages.Players.AddPlayerKnowledgeModel
+@{
+}
+
+<form method="post">
+  <div>
+    <label>Player</label>
+    <select asp-for="PlayerKnowledge.PlayerID"    asp-items="Model.Players"></select>
+  </div>
+  <div>
+    <label>Ingredient</label>
+    <select asp-for="PlayerKnowledge.Id" asp-items="Model.Ingredients"></select>
+  </div>
+  <div>
+    <label>Qualities Known</label>
+    <select asp-for="PlayerKnowledge.qualitiesKnown" asp-items="Model.qualitiesKnown"></select>
+  </div>
+  <button type="submit">Submit</button>
+</form>

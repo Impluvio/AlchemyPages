@@ -12,8 +12,9 @@ namespace AlchemyPages.Services
 
         public DbSet<Ingredient> Ingredients { get; set; }
         public DbSet<Player> Players { get; set; }
+        public DbSet<IngredientEncounter> IngredientEncounters { get; set; } 
+        public DbSet<PlayerKnowledge> PlayerKnowledgeBase { get; set; }
 
-        public DbSet<IngredientEncounter> IngredientEncounters {get; set;} 
 
         //protected ApplicationDBContext()
         //{

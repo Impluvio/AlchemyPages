@@ -29,9 +29,9 @@ namespace AlchemyPages.Pages.Ingredients
             _environment = environment; 
         }
 
-        public IActionResult OnGet(int id)
+        public async Task <IActionResult> OnGetAsync(int id)
         {
-            var ingredientToBeEdited = context.Ingredients.Find(id);
+            var ingredientToBeEdited = await context.Ingredients.FindAsync(id);
 
             if (ingredientToBeEdited == null)
             {
@@ -56,7 +56,7 @@ namespace AlchemyPages.Pages.Ingredients
 
         public async Task<IActionResult> OnPostAsync(int id)
         {
-            var ingredientToBeEdited = context.Ingredients.Find(id);
+            var ingredientToBeEdited = await context.Ingredients.FindAsync(id);
 
             if (ingredientToBeEdited == null)
             {
