@@ -4,7 +4,9 @@
 
     //To do: 
 
-    // - Delete needs to drop entry from table.
+    // - Delete needs to drop entry from table. Check ingredient & players.
+    // - at present onget is not async across pages - update so that it is - this better for sql based applications when querying the database - update similar methods to comply with this.
+    // - assure the await method is use with the above^
 
     // - Create Union between player table and encounters table, OR code solution to create seperate pages for each created player, to display encounters table - show this in Player View.
     // - Alter index to show this. 

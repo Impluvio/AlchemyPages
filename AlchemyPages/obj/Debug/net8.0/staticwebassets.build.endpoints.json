@@ -495,6 +495,88 @@
       ]
     },
     {
+      "Route": "images/e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg",
+      "AssetFile": "images/e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54498"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T4gi5WkjrTi3l9EneyGSOgooh5RnGbgOUzaqwqmmGIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 23:37:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-T4gi5WkjrTi3l9EneyGSOgooh5RnGbgOUzaqwqmmGIM="
+        }
+      ]
+    },
+    {
+      "Route": "images/e64d7267-36fd-4fd6-b687-2004a2abe7dc.xcukh4idsf.jpg",
+      "AssetFile": "images/e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "54498"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"T4gi5WkjrTi3l9EneyGSOgooh5RnGbgOUzaqwqmmGIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 14 May 2025 23:37:14 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xcukh4idsf"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-T4gi5WkjrTi3l9EneyGSOgooh5RnGbgOUzaqwqmmGIM="
+        },
+        {
+          "Name": "label",
+          "Value": "images/e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg"
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js",
       "Selectors": [],

@@ -1,5 +1,6 @@
 using AlchemyPages.Models;
 using AlchemyPages.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -15,11 +16,16 @@ namespace AlchemyPages.Pages.Ingredients
             this.context = context;
         }
 
-        public void OnGet()
+        public async Task<IActionResult> OnGet()
         {
+            ingredientList = await context.Ingredients.OrderByDescending(i => i.Id).ToListAsync();
 
-            ingredientList = context.Ingredients.OrderByDescending(i => i.Id).ToList();
+            if (ingredientList == null)
+            {
+                return RedirectToPage("/Ingredients/Index/");
+            }
 
+            return Page();
         }
     }
 }

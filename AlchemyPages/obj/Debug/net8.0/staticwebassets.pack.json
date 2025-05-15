@@ -25,6 +25,10 @@
       "PackagePath": "staticwebassets\\images\\d16e0b79-89eb-49f0-9913-b32f6f5544d9.png"
     },
     {
+      "Id": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\images\\e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg",
+      "PackagePath": "staticwebassets\\images\\e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg"
+    },
+    {
       "Id": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

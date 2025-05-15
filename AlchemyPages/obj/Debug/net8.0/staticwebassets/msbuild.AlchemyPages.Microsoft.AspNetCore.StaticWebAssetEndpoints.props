@@ -72,6 +72,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q44nruhgco"},{"Name":"integrity","Value":"sha256-qrfziVWQPnRHpz\u002BMNcfb3KdQAqf34uVCKN8PJ4NS07M="},{"Name":"label","Value":"_content/AlchemyPages/images/d16e0b79-89eb-49f0-9913-b32f6f5544d9.png"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1336436"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022qrfziVWQPnRHpz\u002BMNcfb3KdQAqf34uVCKN8PJ4NS07M=\u0022"},{"Name":"Last-Modified","Value":"Tue, 08 Apr 2025 00:12:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AlchemyPages/images/e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-T4gi5WkjrTi3l9EneyGSOgooh5RnGbgOUzaqwqmmGIM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"54498"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022T4gi5WkjrTi3l9EneyGSOgooh5RnGbgOUzaqwqmmGIM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 23:37:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/AlchemyPages/images/e64d7267-36fd-4fd6-b687-2004a2abe7dc.xcukh4idsf.jpg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\images\e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xcukh4idsf"},{"Name":"integrity","Value":"sha256-T4gi5WkjrTi3l9EneyGSOgooh5RnGbgOUzaqwqmmGIM="},{"Name":"label","Value":"_content/AlchemyPages/images/e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"54498"},{"Name":"Content-Type","Value":"image/jpeg"},{"Name":"ETag","Value":"\u0022T4gi5WkjrTi3l9EneyGSOgooh5RnGbgOUzaqwqmmGIM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 14 May 2025 23:37:14 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/AlchemyPages/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

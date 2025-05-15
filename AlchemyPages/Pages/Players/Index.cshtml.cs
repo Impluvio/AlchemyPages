@@ -1,5 +1,6 @@
 using AlchemyPages.Models;
 using AlchemyPages.Services;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -19,9 +20,16 @@ namespace AlchemyPages.Pages.Players
         // pull list from db.players
         // on get ref. 
 
-        public void OnGet()
+        public async Task<IActionResult> OnGet()
         {
-            playerList = context.Players.OrderByDescending(i => i.PlayerID).ToList();
+            playerList = await context.Players.OrderByDescending(i => i.PlayerID).ToListAsync();
+
+            if (playerList == null)
+            {
+                return RedirectToPage("/Shared/Index");
+            }
+
+            return Page();
         }
     }
 }
