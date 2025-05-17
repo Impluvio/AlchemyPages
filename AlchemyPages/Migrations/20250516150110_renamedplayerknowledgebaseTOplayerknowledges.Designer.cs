@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AlchemyPages.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20250501202724_AddPlayersAndEncounters")]
-    partial class AddPlayersAndEncounters
+    [Migration("20250516150110_renamedplayerknowledgebaseTOplayerknowledges")]
+    partial class renamedplayerknowledgebaseTOplayerknowledges
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -117,6 +117,33 @@ namespace AlchemyPages.Migrations
                     b.ToTable("Players");
                 });
 
+            modelBuilder.Entity("AlchemyPages.Models.PlayerKnowledge", b =>
+                {
+                    b.Property<int>("PlayerKnowledgeID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PlayerKnowledgeID"));
+
+                    b.Property<int>("IngredientId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("PlayerID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("QualitiesKnown")
+                        .HasColumnType("int");
+
+                    b.HasKey("PlayerKnowledgeID");
+
+                    b.HasIndex("IngredientId");
+
+                    b.HasIndex("PlayerID", "IngredientId")
+                        .IsUnique();
+
+                    b.ToTable("PlayerKnowledges");
+                });
+
             modelBuilder.Entity("AlchemyPages.Models.IngredientEncounter", b =>
                 {
                     b.HasOne("AlchemyPages.Models.Player", "Player")
@@ -128,6 +155,25 @@ namespace AlchemyPages.Migrations
                     b.HasOne("AlchemyPages.Models.Ingredient", "Ingredient")
                         .WithMany("IngredientEncounters")
                         .HasForeignKey("ingredientID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Ingredient");
+
+                    b.Navigation("Player");
+                });
+
+            modelBuilder.Entity("AlchemyPages.Models.PlayerKnowledge", b =>
+                {
+                    b.HasOne("AlchemyPages.Models.Ingredient", "Ingredient")
+                        .WithMany()
+                        .HasForeignKey("IngredientId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AlchemyPages.Models.Player", "Player")
+                        .WithMany()
+                        .HasForeignKey("PlayerID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 

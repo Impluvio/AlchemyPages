@@ -4,20 +4,19 @@
 
     //To do: 
     // - add a log to the player knowledge page so that we can see changes made
-    // - added logic to pull link players name / id with ingredient name / id and qualites, this doesn't work yet, so we need to update it.
+    // - find out if the playerknowledge model actually needs refs to the player and ingredient classes. 
     // - add ability to edit the quality number to the admin/playerknowledge page
     // - add player page that shows them what does what.
-
     // - assure the await method is use with the above^
     // - Remove ingredient encounter model and table.
     // - introduce functionality to delete player, that enables us to delete all associated entries, so for example remove entries with that player name from the playerknowledge table.
 
-
     // - logic is not updating on "create ingredient page" - debug this. - <CHECK THIS>
-    // - update the html form to form-select from for-control for type / elements / qualities 1,2 & 3
+
+    // - update the html form to form-select from for-control for type / elements / qualities 1,2 & 3 
 
     // - look at creating user / admin sort of interface -
-    // - add logic for delete process in both the ingredients section and the player sections.
+
 
 
     //--------------------------------------
@@ -42,7 +41,12 @@
 
     // DONE
 
+    //         17/05/25
+    // - added logic to pull link players name / id with ingredient name / id and qualites, this doesn't work yet, so we need to update it.
+
+
     //         15/05/25
+    // - add logic for delete process in both the ingredients section and the player sections.
     // - Delete needs to drop entry from table. Check ingredient & players.
     // - at present onget is not async across pages - update so that it is - this better for sql based applications when querying the database - update similar methods to comply with this.
 

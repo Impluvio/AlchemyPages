@@ -4,17 +4,22 @@
 }
 
 <form method="post">
-  <div>
-    <label>Player</label>
-    <select asp-for="PlayerKnowledge.PlayerID"    asp-items="Model.Players"></select>
+
+  <div class="row mb-3">
+        <div class="col-md-3 me-3">
+            <label class="form-label w-100 text-start"> <strong>Player</strong> </label>
+            <select class="form-select w-100" asp-for="PlayerKnowledge.PlayerID" asp-items="Model.Players"></select>
+      </div>
+        <div class="col-md-3 me-3">
+            <label class ="form-label w-100 text-start"> <strong>Ingredient</strong> </label>
+            <select class="form-select w-100" asp-for="PlayerKnowledge.IngredientId" asp-items="Model.Ingredients"></select>
+      </div>
+        <div class="col-md-3 me-3">
+            <label class="form-label w-100 text-start"> <strong>Qualities Known</strong> </label>
+            <select class="form-select w-100" asp-for="PlayerKnowledge.QualitiesKnown" asp-items="Model.QualitiesKnown"></select>
+      </div>
+        <div class="col-md-2 align-self-end">
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+      </div>
   </div>
-  <div>
-    <label>Ingredient</label>
-    <select asp-for="PlayerKnowledge.Id" asp-items="Model.Ingredients"></select>
-  </div>
-  <div>
-    <label>Qualities Known</label>
-    <select asp-for="PlayerKnowledge.qualitiesKnown" asp-items="Model.qualitiesKnown"></select>
-  </div>
-  <button type="submit">Submit</button>
 </form>

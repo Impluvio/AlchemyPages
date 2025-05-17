@@ -1,0 +1,14 @@
+﻿@page
+@model AlchemyPages.Pages.Players.EditPlayerKnowledgeModel
+@{
+}
+<h2 class="text-centre mb-3"> Edit Playerbook Entry  </h2>
+
+
+
+<div class="row mb-3">
+    <div class="col-md-3 me-3">
+        <label class="form-label w-100 text-start"> <strong>Player</strong> </label>
+        <select class="form-select w-100" asp-for="PlayerKnowledge.PlayerID" asp-items="Model.Players"></select>
+    </div>
+</div>

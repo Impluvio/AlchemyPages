@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UbP23HoO78efw1P57VD59xxYrvSPqh44bvC4Dq6okkw=",
+  "Hash": "d5U0rLGOdoInopKuWtL8IiCouvZn8METhGRYiL1b/oE=",
   "Source": "AlchemyPages",
   "BasePath": "_content/AlchemyPages",
   "Mode": "Default",
@@ -99,6 +99,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\images\\60282495-fff8-45d3-ab68-bfbc80dacbf5.jpg",
+      "SourceId": "AlchemyPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\",
+      "BasePath": "_content/AlchemyPages",
+      "RelativePath": "images/60282495-fff8-45d3-ab68-bfbc80dacbf5#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "et5vkm0vat",
+      "Integrity": "zmTXeud7NLLXQjmzl93f99eeg4sYc+sFVDvvXyvub9Y=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\60282495-fff8-45d3-ab68-bfbc80dacbf5.jpg"
     },
     {
       "Identity": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\images\\69f4f23d-7ca7-499d-87de-9b968a2022b8.jpg",
@@ -1729,6 +1750,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+        }
+      ]
+    },
+    {
+      "Route": "images/60282495-fff8-45d3-ab68-bfbc80dacbf5.et5vkm0vat.jpg",
+      "AssetFile": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\images\\60282495-fff8-45d3-ab68-bfbc80dacbf5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1262137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zmTXeud7NLLXQjmzl93f99eeg4sYc+sFVDvvXyvub9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:50:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "et5vkm0vat"
+        },
+        {
+          "Name": "label",
+          "Value": "images/60282495-fff8-45d3-ab68-bfbc80dacbf5.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zmTXeud7NLLXQjmzl93f99eeg4sYc+sFVDvvXyvub9Y="
+        }
+      ]
+    },
+    {
+      "Route": "images/60282495-fff8-45d3-ab68-bfbc80dacbf5.jpg",
+      "AssetFile": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\wwwroot\\images\\60282495-fff8-45d3-ab68-bfbc80dacbf5.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1262137"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zmTXeud7NLLXQjmzl93f99eeg4sYc+sFVDvvXyvub9Y=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 16 May 2025 14:50:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zmTXeud7NLLXQjmzl93f99eeg4sYc+sFVDvvXyvub9Y="
         }
       ]
     },

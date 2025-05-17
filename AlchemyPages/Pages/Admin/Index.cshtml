@@ -5,8 +5,15 @@
 
 <h2 class="text-center mb-3">Admin Options</h2>
 
-<div>
-    <a class="btn btn-primary" asp-page="/Players/AddPlayerKnowledge">Update playerbook</a>
+<div class="row">
+
+    <div class="col">
+            <a class="btn btn-primary w-100" asp-page="/Players/AddPlayerKnowledge">Add to playerbook</a>
+    </div>
+
+    <div class="col">
+            <a class="btn btn-primary w-100" asp-page="/Players/EditPlayerKnowledge">Update playerbook </a>
+    </div>
 
     @*add another option to update qualities perhaps as a seperate page  *@
     @*add delete player & entries button *@

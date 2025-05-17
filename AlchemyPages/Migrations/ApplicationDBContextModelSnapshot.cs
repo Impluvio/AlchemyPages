@@ -116,28 +116,29 @@ namespace AlchemyPages.Migrations
 
             modelBuilder.Entity("AlchemyPages.Models.PlayerKnowledge", b =>
                 {
-                    b.Property<int>("PlayerIngredientEncounterID")
+                    b.Property<int>("PlayerKnowledgeID")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PlayerIngredientEncounterID"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("PlayerKnowledgeID"));
 
-                    b.Property<int>("Id")
+                    b.Property<int>("IngredientId")
                         .HasColumnType("int");
 
                     b.Property<int>("PlayerID")
                         .HasColumnType("int");
 
-                    b.Property<int>("qualitiesKnown")
+                    b.Property<int>("QualitiesKnown")
                         .HasColumnType("int");
 
-                    b.HasKey("PlayerIngredientEncounterID");
+                    b.HasKey("PlayerKnowledgeID");
 
-                    b.HasIndex("Id");
+                    b.HasIndex("IngredientId");
 
-                    b.HasIndex("PlayerID");
+                    b.HasIndex("PlayerID", "IngredientId")
+                        .IsUnique();
 
-                    b.ToTable("PlayerKnowledgeBase");
+                    b.ToTable("PlayerKnowledges");
                 });
 
             modelBuilder.Entity("AlchemyPages.Models.IngredientEncounter", b =>
@@ -163,7 +164,7 @@ namespace AlchemyPages.Migrations
                 {
                     b.HasOne("AlchemyPages.Models.Ingredient", "Ingredient")
                         .WithMany()
-                        .HasForeignKey("Id")
+                        .HasForeignKey("IngredientId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
