@@ -2,13 +2,40 @@
 @model AlchemyPages.Pages.Players.EditPlayerKnowledgeModel
 @{
 }
-<h2 class="text-centre mb-3"> Edit Playerbook Entry  </h2>
+<h2 class="text-centre mb-3"> Edit Playerbook </h2>
 
 
+<form method="get">
 
-<div class="row mb-3">
-    <div class="col-md-3 me-3">
-        <label class="form-label w-100 text-start"> <strong>Player</strong> </label>
-        <select class="form-select w-100" asp-for="PlayerKnowledge.PlayerID" asp-items="Model.Players"></select>
+    <div class="mb-3">
+        <label class="form-label"><strong>Select Player</strong></label>
+        <select asp-for="SelectedPlayerID" asp-items="Model.Players" class="form-control" onchange="this.form.submit()">
+            <option value="">-- Select Player --</option>
+        </select>
     </div>
-</div>
+
+</form>
+
+@if (Model.PlayerKnowledgeList != null && Model.PlayerKnowledgeList.Any())
+{
+    <table class="table">
+        <thead>
+            <tr><th>Ingredient Name</th> <th>Qualities Discovered</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.PlayerKnowledgeList)
+            {
+                <tr>
+                    <td>@item.Ingredient.Name</td>  
+                    <td>@item.QualitiesKnown</td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else if (Model.SelectedPlayerID != null)
+{
+    <p>No Knowledge entries found for this player</p>
+}
+

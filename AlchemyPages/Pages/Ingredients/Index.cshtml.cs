@@ -16,7 +16,7 @@ namespace AlchemyPages.Pages.Ingredients
             this.context = context;
         }
 
-        public async Task<IActionResult> OnGet()
+        public async Task<IActionResult> OnGetAsync()
         {
             ingredientList = await context.Ingredients.OrderByDescending(i => i.Id).ToListAsync();
 
