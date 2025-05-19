@@ -39,31 +39,21 @@ namespace AlchemyPages.Pages.Players
 
         public async Task<IActionResult> OnPostAsync()
         {
-            if (!ModelState.IsValid)
-            {
-                if (!ModelState.IsValid)
-                {
-                    foreach (var entry in ModelState)
-                    {
-                        foreach (var error in entry.Value.Errors)
-                        {
-                            Console.WriteLine($"Error in {entry.Key}: {error.ErrorMessage}");
-                        }
-                    }
 
-                    // repopulate dropdowns
-                    await OnGetAsync();
-                    return Page();
-                }
-                await OnGetAsync();
-                return Page();
-            }
+            bool alreadyExists = await context.PlayerKnowledges.AnyAsync(pk => pk.PlayerID == PlayerKnowledge.PlayerID && pk.IngredientId == PlayerKnowledge.IngredientId);
 
             if (!ModelState.IsValid)
             {
+
                 Console.WriteLine("Model state not valid");
                 await OnGetAsync(); return Page();
 
+            }
+            if (alreadyExists)
+            {
+                ModelState.AddModelError(string.Empty, "this ingredient is known already");
+                await OnGetAsync();
+                return Page();
             }
 
 
