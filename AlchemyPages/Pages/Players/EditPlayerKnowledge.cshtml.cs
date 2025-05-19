@@ -15,6 +15,7 @@ namespace AlchemyPages.Pages.Players
         public SelectList Players { get; set; }
         public List<PlayerKnowledge> PlayerKnowledgeList { get; set; }
 
+
         public EditPlayerKnowledgeModel(ApplicationDBContext context)
         {
             this.context = context;
@@ -39,9 +40,16 @@ namespace AlchemyPages.Pages.Players
 
         }
 
-        public async Task OnPostAsync()
+        public async Task<IActionResult> OnPostUpdateAsync(int PlayerKnowledgeID, int QualitiesKnown)
         {
+            var entry = await context.PlayerKnowledges.FindAsync(PlayerKnowledgeID);
+            if(entry != null)
+            {
+                entry.QualitiesKnown = QualitiesKnown;
+                await context.SaveChangesAsync();
+            }
 
+            return RedirectToPage(new { SelectedPlayerID });
         }
 
 
