@@ -7,10 +7,10 @@
 <div>
     <p class="text-centre mb-3" style="color: dimgrey ">@Model.PlayerKnowledge.Ingredient.Name</p>
 
-
-    <input type="hidden" asp-for="PlayerKnowledge.PlayerKnowledgeID" />
+    <form method="post">
+    <input type="hidden" name="id" value="@Model.PlayerKnowledge.PlayerKnowledgeID" />
     <button type="submit" class="btn btn-danger"> Yes, Delete</button>
-    <a class="btn btn-secondary" asp-page="/Admin/EditPlayerKnowledge" role="button">Cancel</a>
-
+    <a class="btn btn-secondary" asp-page="/Players/EditPlayerKnowledge" role="button">Cancel</a>
+    </form>
 
 </div>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AlchemyPages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+550b7a27cde6dd728ccc948242ef205bec2b68f9")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5077f61633c43b3bb915e7eef6a5bcae92ebc491")]
 [assembly: System.Reflection.AssemblyProductAttribute("AlchemyPages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AlchemyPages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

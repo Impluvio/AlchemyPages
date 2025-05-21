@@ -2,27 +2,34 @@ using AlchemyPages.Models;
 using AlchemyPages.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
+using System.Threading.Tasks.Dataflow;
 
 namespace AlchemyPages.Pages.Players
 {
     public class DeletePlayerKnowledgeModel : PageModel
     {
-        private ApplicationDBContext context;
+        private readonly ApplicationDBContext context;
 
-        public PlayerKnowledge PlayerKnowledge { get; set; }
-
+       [BindProperty] public PlayerKnowledge PlayerKnowledge { get; set; }
 
         public DeletePlayerKnowledgeModel(ApplicationDBContext context)
         {
             this.context = context;
         }
 
-        public async Task<IActionResult> OnGetAsync(int PlayerKnowledgeID)
-        {
-            PlayerKnowledge = await context.PlayerKnowledges.FindAsync(PlayerKnowledgeID);
 
+      
+
+        public async Task<IActionResult> OnGetAsync(int Id)
+        {
+           
+            PlayerKnowledge = await context.PlayerKnowledges.Include(playerK => playerK.Ingredient).FirstOrDefaultAsync(playerK => playerK.PlayerKnowledgeID == Id);
+           
             if (PlayerKnowledge == null)
             {
+                Debug.WriteLine("player knowledge NULL");
                 return RedirectToPage("/Players/EditPlayerKnowledge");
             }
 
@@ -30,9 +37,17 @@ namespace AlchemyPages.Pages.Players
 
         }
 
-        public async Task<IActionResult> OnPostAsync()
+        public async Task<IActionResult> OnPostAsync(int id)
         {
-            var PlayerknowledgeToDelete =  await context.PlayerKnowledges.FindAsync(PlayerKnowledge.PlayerKnowledgeID);
+            Debug.WriteLine("on POST Async hit");
+
+
+            //if (PlayerKnowledge == null || PlayerKnowledge.PlayerKnowledgeID == 0)
+            //{
+            //    return RedirectToPage("/Players/EditPlayerKnowledge");
+            //}
+
+            var PlayerknowledgeToDelete =  await context.PlayerKnowledges.FindAsync(id);
 
             if (PlayerknowledgeToDelete != null)
             {
@@ -40,7 +55,7 @@ namespace AlchemyPages.Pages.Players
                 context.SaveChanges();
             }
 
-            return RedirectToPage("Players/EditPlayerKnowledge");
+            return RedirectToPage("/Players/EditPlayerKnowledge");
 
 
         }

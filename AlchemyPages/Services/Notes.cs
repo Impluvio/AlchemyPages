@@ -6,14 +6,12 @@ namespace AlchemyPages.Services
     // Used only for notes:
 
     //To do: 
-
+    // - add a back button to the add / edit player knowledge pages
     // - add player page that shows them what does what.
-    // - fix delete on update playerbook
-    // - assure the await method is use with the above^
 
     // - introduce functionality to delete player, that enables us to delete all associated entries, so for example remove entries with that player name from the playerknowledge table.
     // - logic is not updating on "create ingredient page" - debug this. - <CHECK THIS>
-    // - update the html form to form-select from for-control for type / elements / qualities 1,2 & 3 
+    // - update the html form to form-select from form-control for type / elements / qualities 1,2 & 3 
     // - look at creating user / admin sort of interface.
     // 
 
@@ -38,6 +36,12 @@ namespace AlchemyPages.Services
     //--------------------------------------
 
     // DONE
+
+    //         21/05/25
+    // - fix delete on update playerbook
+    // - fixed cancel button on same page
+    // - assure the await method is use with the above^
+
 
     //         19/05/25
     // - add a log to the player knowledge page so that we can see changes made - not needed now.
