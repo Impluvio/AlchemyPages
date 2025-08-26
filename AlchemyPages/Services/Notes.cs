@@ -15,6 +15,14 @@ namespace AlchemyPages.Services
     // - look at creating user / admin sort of interface.
     // 
 
+    // Player View:
+    // Player selects their craftbook 
+    // we need to get that players name, the ingredient & the knowledge. 
+    // we need to display the player name - then a list of the ingredients that they know. 
+    // and do a foreach to display the properties associated with the ingredient which depends on the qualities they know.
+
+
+
     //--------------------------------------
 
 

@@ -4739,11 +4739,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\AlchemyPages.csproj",
+      "projectUniqueName": "C:\\Users\\adamc\\C#_Projects\\AlchemyPages\\AlchemyPages\\AlchemyPages.csproj",
       "projectName": "AlchemyPages",
-      "projectPath": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\AlchemyPages.csproj",
+      "projectPath": "C:\\Users\\adamc\\C#_Projects\\AlchemyPages\\AlchemyPages\\AlchemyPages.csproj",
       "packagesPath": "C:\\Users\\adamc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adamc\\source\\repos\\AlchemyPages\\AlchemyPages\\obj\\",
+      "outputPath": "C:\\Users\\adamc\\C#_Projects\\AlchemyPages\\AlchemyPages\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4776,7 +4776,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -4812,7 +4812,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
