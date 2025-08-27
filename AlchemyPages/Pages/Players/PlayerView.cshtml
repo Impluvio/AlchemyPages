@@ -17,4 +17,53 @@
         <input type="text" class="form-control" value="@Model.Player.FirstName"/>
     </div>
 
+    <div style="overflow-x:auto;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Element</th>
+                    <th>Description</th>
+                    <th>Quality I</th>
+                    <th>Quality II</th>
+                    <th>Quality III</th>
+                    <th>Image</th>
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var record in Model.KnowledgeList)
+                {
+                    <tr>
+                        <td>@record.Ingredient.Name</td>
+                        <td>@record.Ingredient.Type</td>
+                        <td>@record.Ingredient.Element</td>
+                        <td>@record.Ingredient.Description</td>
+                        <td> @(record.QualitiesKnown >= 1 ? @record.Ingredient.qualityOne : "Unknown")</td>
+                        <td> @(record.QualitiesKnown >= 2 ? @record.Ingredient.qualityTwo : "Unknown")</td>
+                        <td> @(record.QualitiesKnown >= 3 ? @record.Ingredient.qualityThree : "Unknown")</td>
+
+                        @* <td>@ingredient.qualityOne</td>
+                        <td>@ingredient.qualityTwo</td>
+                        <td>@ingredient.qualityThree</td> *@
+                        @* <td>
+                            @if (!string.IsNullOrEmpty(record.Ingredient.imageFileLocation))
+                            {
+                                <img src="@ingredient.imageFileLocation" style="max-width: 100px; height:auto;" alt="Ingredient Image" />
+                            }
+                            else
+                            {
+                                <span> No Image </span>
+                            }
+
+                        </td> *@
+                        
+                       
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+
 </div>

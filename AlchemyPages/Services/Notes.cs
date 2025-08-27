@@ -16,10 +16,10 @@ namespace AlchemyPages.Services
     // 
 
     // Player View:
-    // Player selects their craftbook 
-    // we need to get that players name, the ingredient & the knowledge. 
-    // we need to display the player name - then a list of the ingredients that they know. 
-    // and do a foreach to display the properties associated with the ingredient which depends on the qualities they know.
+    // Player selects their craftbook - DONE
+    // we need to get that players name, the ingredient & the knowledge. - DONE 
+    // we need to display the player name - then a list of the ingredients that they know. - DONE
+    // and do a foreach to display the properties associated with the ingredient which depends on the qualities they know. 
 
 
 

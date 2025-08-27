@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\images\4a6fb007-7dad-45a2-bb3b-76a5c7bac163.jpg
 wwwroot\images\4a740e33-4cfc-407e-9d5d-cf37b867e059.jpg
 wwwroot\images\60282495-fff8-45d3-ab68-bfbc80dacbf5.jpg
 wwwroot\images\69f4f23d-7ca7-499d-87de-9b968a2022b8.jpg
@@ -65,4 +66,3 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
-wwwroot\images\4a6fb007-7dad-45a2-bb3b-76a5c7bac163.jpg
