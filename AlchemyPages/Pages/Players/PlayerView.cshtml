@@ -26,6 +26,7 @@
                     <th>Quality II</th>
                     <th>Quality III</th>
                     <th>Image</th>
+                    <th>Test</th> @*Delete this later*@
                 </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -52,22 +53,17 @@
 
                         </td>
 
+                        <td>   
+                            @if (record.QualitiesKnown >= 1 && !string.IsNullOrEmpty(record.Ingredient.qualityOne))
+                            {
+                                var iconFileName = record.Ingredient.qualityOne; 
 
-                        @* <td>@ingredient.qualityOne</td>
-                        <td>@ingredient.qualityTwo</td>
-                        <td>@ingredient.qualityThree</td> *@
-                        @* <td>
-                            @if (!string.IsNullOrEmpty(record.Ingredient.imageFileLocation))
-                            {
-                                <img src="@ingredient.imageFileLocation" style="max-width: 100px; height:auto;" alt="Ingredient Image" />
-                            }
-                            else
-                            {
-                                <span> No Image </span>
+                                @* pass string to img and display it.*@
                             }
 
-                        </td> *@
-                        
+                        </td>
+
+
                        
                     </tr>
                 }

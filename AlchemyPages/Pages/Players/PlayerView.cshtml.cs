@@ -1,5 +1,6 @@
 using AlchemyPages.Models;
 using AlchemyPages.Services;
+using Azure.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
@@ -16,10 +17,12 @@ namespace AlchemyPages.Pages.Players
 
         public List<PlayerKnowledge> KnowledgeList { get; set; }
 
+        private readonly IWebHostEnvironment _environment;
 
-        public PlayerViewModel(ApplicationDBContext context)
+        public PlayerViewModel(ApplicationDBContext context,IWebHostEnvironment environment)
         {
             this.context = context;
+            _environment = environment;
         }
 
         public async Task<IActionResult> OnGetAsync(int PlayerID)
@@ -35,6 +38,10 @@ namespace AlchemyPages.Pages.Players
             Player = playerToDisplay;
 
             KnowledgeList = await context.PlayerKnowledges.Where(record => record.PlayerID == PlayerID).Include(record => record.Ingredient).ToListAsync();
+
+            //var filePath = Path.Combine(_environment.WebRootPath, "property-icons", 
+
+                
 
             return Page();
 

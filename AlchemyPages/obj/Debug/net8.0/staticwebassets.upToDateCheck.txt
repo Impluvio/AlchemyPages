@@ -68,3 +68,6 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\property-icons\Poison.png
+wwwroot\property-icons\Shade.png
+wwwroot\property-icons\Void.png
