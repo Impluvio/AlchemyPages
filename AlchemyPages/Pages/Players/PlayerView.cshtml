@@ -13,10 +13,7 @@
 <div class="row mb-3">
 
     <label class="col-sm-4 col-form-label">@Model.Player.FirstName</label>
-    <div class="col-sm-8">
-        <input type="text" class="form-control" value="@Model.Player.FirstName"/>
-    </div>
-
+    
     <div style="overflow-x:auto;">
         <table class="table">
             <thead>
@@ -42,6 +39,19 @@
                         <td> @(record.QualitiesKnown >= 1 ? @record.Ingredient.qualityOne : "Unknown")</td>
                         <td> @(record.QualitiesKnown >= 2 ? @record.Ingredient.qualityTwo : "Unknown")</td>
                         <td> @(record.QualitiesKnown >= 3 ? @record.Ingredient.qualityThree : "Unknown")</td>
+
+                        <td>
+                            @if (!string.IsNullOrEmpty(record.Ingredient.imageFileLocation))
+                            {
+                                <img src="@record.Ingredient.imageFileLocation" style="max-width: 100px; height:auto;" alt="Ingredient Image" />
+                            }
+                            else
+                            {
+                                <span> No Image </span>
+                            }
+
+                        </td>
+
 
                         @* <td>@ingredient.qualityOne</td>
                         <td>@ingredient.qualityTwo</td>

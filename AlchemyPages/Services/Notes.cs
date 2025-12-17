@@ -6,19 +6,19 @@ namespace AlchemyPages.Services
     // Used only for notes:
 
     //To do: 
-    // - add a back button to the add / edit player knowledge pages
-    // - add player page that shows them what does what.
+
+
+    // - add player page that shows them what does what. - new
 
     // - introduce functionality to delete player, that enables us to delete all associated entries, so for example remove entries with that player name from the playerknowledge table.
-    // - logic is not updating on "create ingredient page" - debug this. - <CHECK THIS>
+
     // - update the html form to form-select from form-control for type / elements / qualities 1,2 & 3 
     // - look at creating user / admin sort of interface.
-    // 
+    // - make sure this database & app is safe?
+    // - figure out how to package the database so that it is created on app install?
 
     // Player View:
-    // Player selects their craftbook - DONE
-    // we need to get that players name, the ingredient & the knowledge. - DONE 
-    // we need to display the player name - then a list of the ingredients that they know. - DONE
+
     // and do a foreach to display the properties associated with the ingredient which depends on the qualities they know. 
 
 
@@ -27,7 +27,7 @@ namespace AlchemyPages.Services
 
 
     //General notes
-    // - ICollection<ingredientEncounter> denotes the many to many relationship and helps navigate.
+    // - ICollection<ingredientEncounter> denotes the many to ma ny relationship and helps navigate.
     // - check to see if ingredient ID works without changing name on the ingredients table. - done
 
 
@@ -74,6 +74,15 @@ namespace AlchemyPages.Services
     // - change permissions so i can do the above^ - DONE
     // - migration has been added, we need to update database once the player table has been removed - DONE 
     // - create logic to save and display images from c drive - DONE
+
+    //         16/12/25
+    // - viewing the players Craftbook has two fields at the top where the player name is shown, one is editable - delete this. - DONE
+    // - player CraftBook does not show image. - DONE
+    // - add a back button to the add / edit player knowledge pages - DONE
+    // - logic is not updating on "create ingredient page" - debug this. - <CHECK THIS> - <Checked> - DONE
+    // - Player selects their craftbook - DONE
+    // - we need to get that players name, the ingredient & the knowledge. - DONE 
+    // - we need to display the player name - then a list of the ingredients that they know. - DONE
 
 
 
