@@ -7,20 +7,16 @@ namespace AlchemyPages.Services
 
     //To do: 
 
+    // - update the html form to form-select from form-control for type / elements / qualities 1,2 & 3 
 
     // - add player page that shows them what does what. - new
 
     // - introduce functionality to delete player, that enables us to delete all associated entries, so for example remove entries with that player name from the playerknowledge table.
 
-    // - update the html form to form-select from form-control for type / elements / qualities 1,2 & 3 
+
     // - look at creating user / admin sort of interface.
     // - make sure this database & app is safe?
-    // - figure out how to package the database so that it is created on app install?
-
-    // Player View:
-
-    // and do a foreach to display the properties associated with the ingredient which depends on the qualities they know. 
-
+    // - figure out how to package the database so that it is created on app install
 
 
     //--------------------------------------
@@ -83,6 +79,9 @@ namespace AlchemyPages.Services
     // - Player selects their craftbook - DONE
     // - we need to get that players name, the ingredient & the knowledge. - DONE 
     // - we need to display the player name - then a list of the ingredients that they know. - DONE
+
+    //          17/12/25
+    // - Do a foreach to display images of the properties associated with the ingredient which depends on the qualities they know. 
 
 
 

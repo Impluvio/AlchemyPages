@@ -37,9 +37,36 @@
                         <td>@record.Ingredient.Type</td>
                         <td>@record.Ingredient.Element</td>
                         <td>@record.Ingredient.Description</td>
-                        <td> @(record.QualitiesKnown >= 1 ? @record.Ingredient.qualityOne : "Unknown")</td>
-                        <td> @(record.QualitiesKnown >= 2 ? @record.Ingredient.qualityTwo : "Unknown")</td>
-                        <td> @(record.QualitiesKnown >= 3 ? @record.Ingredient.qualityThree : "Unknown")</td>
+                        <td>
+                            @if (record.QualitiesKnown >= 1 && !string.IsNullOrEmpty(record.Ingredient.qualityOne))
+                            {
+                                <img src="~/@record.Ingredient.qualityOneIconPath" alt="@record.Ingredient.qualityOne" />
+                            }
+                            else
+                            {
+                                <span class="text-muted"> Unknown </span>
+                            }
+                        </td>
+                        <td>
+                            @if (record.QualitiesKnown >= 2 && !string.IsNullOrEmpty(record.Ingredient.qualityTwo))
+                            {
+                                <img src="~/@record.Ingredient.qualityTwoIconPath" alt="@record.Ingredient.qualityTwo" />
+                            }
+                            else
+                            {
+                                <span class="text-muted"> Unknown </span>
+                            }
+                        </td>
+                        <td>
+                            @if (record.QualitiesKnown >= 3 && !string.IsNullOrEmpty(record.Ingredient.qualityThree))
+                            {
+                                <img src="~/@record.Ingredient.qualityThreeIconPath" alt="@record.Ingredient.qualityThree" />
+                            }
+                            else
+                            {
+                                <span class="text-muted"> Unknown </span>
+                            }
+                        </td>
 
                         <td>
                             @if (!string.IsNullOrEmpty(record.Ingredient.imageFileLocation))
@@ -49,16 +76,6 @@
                             else
                             {
                                 <span> No Image </span>
-                            }
-
-                        </td>
-
-                        <td>   
-                            @if (record.QualitiesKnown >= 1 && !string.IsNullOrEmpty(record.Ingredient.qualityOne))
-                            {
-                                var iconFileName = record.Ingredient.qualityOne; 
-
-                                @* pass string to img and display it.*@
                             }
 
                         </td>

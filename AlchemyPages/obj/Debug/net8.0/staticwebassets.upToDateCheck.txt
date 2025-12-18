@@ -10,6 +10,7 @@ wwwroot\images\b06708a3-b712-4495-88d4-7a09bbb415d1.jpg
 wwwroot\images\bc8e389a-c57a-4439-8d73-7d0710caa368.png
 wwwroot\images\d16e0b79-89eb-49f0-9913-b32f6f5544d9.png
 wwwroot\images\e64d7267-36fd-4fd6-b687-2004a2abe7dc.jpg
+wwwroot\images\e75dead0-f367-4339-a569-67f43a91ce26.jpg
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map

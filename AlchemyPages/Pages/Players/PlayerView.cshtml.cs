@@ -39,9 +39,21 @@ namespace AlchemyPages.Pages.Players
 
             KnowledgeList = await context.PlayerKnowledges.Where(record => record.PlayerID == PlayerID).Include(record => record.Ingredient).ToListAsync();
 
-            //var filePath = Path.Combine(_environment.WebRootPath, "property-icons", 
-
-                
+            foreach (var record in KnowledgeList)
+            {
+                if (!string.IsNullOrEmpty(record.Ingredient.qualityOne))
+                {
+                    record.Ingredient.qualityOneIconPath = Path.Combine("property-icons", record.Ingredient.qualityOne + ".png");
+                }
+                if (!string.IsNullOrEmpty(record.Ingredient.qualityTwo))
+                {
+                    record.Ingredient.qualityTwoIconPath = Path.Combine("property-icons", record.Ingredient.qualityTwo + ".png");
+                }
+                if (!string.IsNullOrEmpty(record.Ingredient.qualityThree))
+                {
+                    record.Ingredient.qualityThreeIconPath = Path.Combine("property-icons", record.Ingredient.qualityThree + ".png");
+                }
+            }
 
             return Page();
 
