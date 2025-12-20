@@ -3,6 +3,7 @@ using AlchemyPages.Models;
 using AlchemyPages.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Diagnostics;
 using System.IO;
 using System.Security.Cryptography.Xml;
@@ -12,19 +13,27 @@ namespace AlchemyPages.Pages.Ingredients
 {
     public class CreateModel : PageModel
     {
+        
+
         private readonly ApplicationDBContext context;
         [BindProperty] public IngredientCreate ingredientCreate { get; set; }
         [BindProperty] public IFormFile ImageFile { get; set; }
 
         private readonly IWebHostEnvironment _environment;
 
+        public List<SelectListItem> qualityOptions { get; set; }
+
         public CreateModel(ApplicationDBContext context, IWebHostEnvironment environment)
         {
             this.context = context;
             _environment = environment;
+            
         }
         public void OnGet()
         {
+            qualityOptions = IngredientQualities.allQualities.Select(quality => new SelectListItem 
+            {Value = quality, Text = quality}).ToList(); 
+
         }
 
         public async Task<IActionResult> OnPostAsync()
@@ -32,6 +41,7 @@ namespace AlchemyPages.Pages.Ingredients
             if (!ModelState.IsValid)
             {
                 Debug.WriteLine("not a valid model");
+                OnGet();
                 return Page();
             }
 
@@ -48,6 +58,7 @@ namespace AlchemyPages.Pages.Ingredients
                 ingredientCreate.imageFileLocation = "/images/" + fileName;
 
             }
+
 
             var Ingredient = new Ingredient
             {
@@ -68,6 +79,8 @@ namespace AlchemyPages.Pages.Ingredients
             await context.SaveChangesAsync();
 
             return RedirectToPage("/Ingredients/Index");
+
+
         } 
     }
 }
