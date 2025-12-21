@@ -7,9 +7,9 @@ namespace AlchemyPages.Services
 
     //To do: 
 
-    // - update the html form to form-select from form-control for type / elements / qualities 1,2 & 3 
+    // change edit page to dropdowns too. 
 
-    // - add player page that shows them what does what. - new
+
 
     // - introduce functionality to delete player, that enables us to delete all associated entries, so for example remove entries with that player name from the playerknowledge table.
 
@@ -23,7 +23,7 @@ namespace AlchemyPages.Services
 
 
     //General notes
-    // - ICollection<ingredientEncounter> denotes the many to ma ny relationship and helps navigate.
+    // - ICollection<ingredientEncounter> denotes the many to many relationship and helps navigate.
     // - check to see if ingredient ID works without changing name on the ingredients table. - done
 
 
@@ -35,6 +35,7 @@ namespace AlchemyPages.Services
     // - Make it possible to clear the database with several checks in place.
     // - make a prettier version than the simple standard razor pages format.
     // - change the qualities to also display little icons
+    // - add player page that shows them what does what. - new
 
 
     //--------------------------------------
@@ -80,9 +81,10 @@ namespace AlchemyPages.Services
     // - we need to get that players name, the ingredient & the knowledge. - DONE 
     // - we need to display the player name - then a list of the ingredients that they know. - DONE
 
-    //          17/12/25
+    //          21/12/25
     // - Do a foreach to display images of the properties associated with the ingredient which depends on the qualities they know. 
-
-
+    // - update the html form to form-select from form-control for type / elements / qualities 1,2 & 3 - half done.
+    // - fix the weird formatting of the ingredient type on the new ingredient page.
+    //
 
 }

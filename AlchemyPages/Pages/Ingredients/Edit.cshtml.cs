@@ -1,10 +1,11 @@
+using AlchemyPages.Models;
+using AlchemyPages.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using AlchemyPages.Services;
-using AlchemyPages.Models;
-using System.Xml.Linq;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Data.SqlClient.DataClassification;
 using System.Diagnostics;
+using System.Xml.Linq;
 
 namespace AlchemyPages.Pages.Ingredients
 {
@@ -23,6 +24,9 @@ namespace AlchemyPages.Pages.Ingredients
         private readonly ApplicationDBContext context;
         private readonly IWebHostEnvironment _environment;
 
+        public List<SelectListItem> qualityOptions { get; set; }
+        public List<SelectListItem> elementOptions { get; set; }
+
         public EditModel(ApplicationDBContext context, IWebHostEnvironment environment)
         {
             this.context = context;
@@ -31,6 +35,13 @@ namespace AlchemyPages.Pages.Ingredients
 
         public async Task <IActionResult> OnGetAsync(int id)
         {
+            qualityOptions = IngredientQualities.allQualities.Select(quality => new SelectListItem
+            { Value = quality, Text = quality }).ToList();
+
+            elementOptions = ElementTypes.allElementTypes.Select(elementType => new SelectListItem
+            { Value = elementType, Text = elementType }).ToList();
+
+
             var ingredientToBeEdited = await context.Ingredients.FindAsync(id);
 
             if (ingredientToBeEdited == null)

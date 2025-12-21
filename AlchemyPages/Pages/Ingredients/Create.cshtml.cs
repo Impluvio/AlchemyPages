@@ -22,17 +22,21 @@ namespace AlchemyPages.Pages.Ingredients
         private readonly IWebHostEnvironment _environment;
 
         public List<SelectListItem> qualityOptions { get; set; }
+        public List<SelectListItem> elementOptions { get; set; }
 
         public CreateModel(ApplicationDBContext context, IWebHostEnvironment environment)
         {
             this.context = context;
             _environment = environment;
-            
+
         }
         public void OnGet()
         {
-            qualityOptions = IngredientQualities.allQualities.Select(quality => new SelectListItem 
-            {Value = quality, Text = quality}).ToList(); 
+            qualityOptions = IngredientQualities.allQualities.Select(quality => new SelectListItem
+            { Value = quality, Text = quality }).ToList();
+
+            elementOptions = ElementTypes.allElementTypes.Select(elementType => new SelectListItem 
+            { Value = elementType, Text = elementType }).ToList();
 
         }
 
