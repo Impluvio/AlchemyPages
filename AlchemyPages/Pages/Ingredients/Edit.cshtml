@@ -48,7 +48,7 @@
                     <div class="row mb-3">
                         <label class="col-sm-4 col-form-label">Element</label>
                         <div class="col-sm-8">
-                            <input class="form-control" asp-for="ingredientCreate.Element">
+                            <select class="form-control" asp-for="ingredientCreate.Element" asp-items="Model.elementOptions"></select>
                             <span asp-validation-for="ingredientCreate.Element" class="text-danger"> </span>
                         </div>
 
@@ -83,7 +83,7 @@
                 <div class="row mb-3">
                     <label class="col-sm-4 col-form-label">Quality I</label>
                     <div class="col-sm-8">
-                        <input class="form-control" asp-for="ingredientCreate.qualityOne">
+                        <select class="form-select" asp-for="ingredientCreate.qualityOne" asp-items="Model.qualityOptions"> </select>
                         <span asp-validation-for="ingredientCreate.qualityOne" class="text-danger"> </span>
                     </div>
 
@@ -91,14 +91,14 @@
                 <div class="row mb-3">
                     <label class="col-sm-4 col-form-label">Quality II</label>
                     <div class="col-sm-8">
-                        <input class="form-control" asp-for="ingredientCreate.qualityTwo">
+                        <select class="form-select" asp-for="ingredientCreate.qualityTwo" asp-items="Model.qualityOptions"> </select>
                         <span asp-validation-for="ingredientCreate.qualityTwo" class="text-danger"> </span>
                     </div>
 
                 </div><div class="row mb-3">
                     <label class="col-sm-4 col-form-label">Quality III</label>
                     <div class="col-sm-8">
-                        <input class="form-control" asp-for="ingredientCreate.qualityThree">
+                        <select class="form-select" asp-for="ingredientCreate.qualityThree" asp-items="Model.qualityOptions"> </select>
                         <span asp-validation-for="ingredientCreate.qualityThree" class="text-danger"> </span>
                     </div>
 

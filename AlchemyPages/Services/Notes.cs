@@ -6,14 +6,18 @@ namespace AlchemyPages.Services
     // Used only for notes:
 
     //To do: 
-    // - add a back button to the add / edit player knowledge pages
-    // - add player page that shows them what does what.
+
+    // change edit page to dropdowns too. 
+
+
 
     // - introduce functionality to delete player, that enables us to delete all associated entries, so for example remove entries with that player name from the playerknowledge table.
-    // - logic is not updating on "create ingredient page" - debug this. - <CHECK THIS>
-    // - update the html form to form-select from form-control for type / elements / qualities 1,2 & 3 
+
+
     // - look at creating user / admin sort of interface.
-    // 
+    // - make sure this database & app is safe?
+    // - figure out how to package the database so that it is created on app install
+
 
     //--------------------------------------
 
@@ -31,6 +35,7 @@ namespace AlchemyPages.Services
     // - Make it possible to clear the database with several checks in place.
     // - make a prettier version than the simple standard razor pages format.
     // - change the qualities to also display little icons
+    // - add player page that shows them what does what. - new
 
 
     //--------------------------------------
@@ -67,6 +72,7 @@ namespace AlchemyPages.Services
     // - migration has been added, we need to update database once the player table has been removed - DONE 
     // - create logic to save and display images from c drive - DONE
 
+
     //      15/08/2025 
     //       |TO DO|
     // - player edit page displays player ID as ingredient ID.
@@ -75,5 +81,20 @@ namespace AlchemyPages.Services
     // - create player page
     // - maybe create login for players / admin.
 
+    //         16/12/25
+    // - viewing the players Craftbook has two fields at the top where the player name is shown, one is editable - delete this. - DONE
+    // - player CraftBook does not show image. - DONE
+    // - add a back button to the add / edit player knowledge pages - DONE
+    // - logic is not updating on "create ingredient page" - debug this. - <CHECK THIS> - <Checked> - DONE
+    // - Player selects their craftbook - DONE
+    // - we need to get that players name, the ingredient & the knowledge. - DONE 
+    // - we need to display the player name - then a list of the ingredients that they know. - DONE
+
+
+    //          21/12/25
+    // - Do a foreach to display images of the properties associated with the ingredient which depends on the qualities they know. 
+    // - update the html form to form-select from form-control for type / elements / qualities 1,2 & 3 - half done.
+    // - fix the weird formatting of the ingredient type on the new ingredient page.
+    //
 
 }

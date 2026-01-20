@@ -9,3 +9,87 @@
 
 @* load data from player sql table and display data from asscoiated encounter table *@
 @* Also make sure that the player ID is passed through here. *@
+
+
+<h2 class=" text-center mb-3">Player CraftBook</h2>
+
+<div class="row mb-3">
+
+    <label class="col-sm-4 col-form-label">@Model.Player.FirstName</label>
+    
+    <div style="overflow-x:auto;">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Element</th>
+                    <th>Description</th>
+                    <th>Quality I</th>
+                    <th>Quality II</th>
+                    <th>Quality III</th>
+                    <th>Image</th>
+                    <th>Test</th> @*Delete this later*@
+                </tr>
+            </thead>
+            <tbody class="table-group-divider">
+                @foreach (var record in Model.KnowledgeList)
+                {
+                    <tr>
+                        <td>@record.Ingredient.Name</td>
+                        <td>@record.Ingredient.Type</td>
+                        <td>@record.Ingredient.Element</td>
+                        <td>@record.Ingredient.Description</td>
+                        <td>
+                            @if (record.QualitiesKnown >= 1 && !string.IsNullOrEmpty(record.Ingredient.qualityOne))
+                            {
+                                <img src="~/@record.Ingredient.qualityOneIconPath" alt="@record.Ingredient.qualityOne" />
+                            }
+                            else
+                            {
+                                <span class="text-muted"> Unknown </span>
+                            }
+                        </td>
+                        <td>
+                            @if (record.QualitiesKnown >= 2 && !string.IsNullOrEmpty(record.Ingredient.qualityTwo))
+                            {
+                                <img src="~/@record.Ingredient.qualityTwoIconPath" alt="@record.Ingredient.qualityTwo" />
+                            }
+                            else
+                            {
+                                <span class="text-muted"> Unknown </span>
+                            }
+                        </td>
+                        <td>
+                            @if (record.QualitiesKnown >= 3 && !string.IsNullOrEmpty(record.Ingredient.qualityThree))
+                            {
+                                <img src="~/@record.Ingredient.qualityThreeIconPath" alt="@record.Ingredient.qualityThree" />
+                            }
+                            else
+                            {
+                                <span class="text-muted"> Unknown </span>
+                            }
+                        </td>
+
+                        <td>
+                            @if (!string.IsNullOrEmpty(record.Ingredient.imageFileLocation))
+                            {
+                                <img src="@record.Ingredient.imageFileLocation" style="max-width: 100px; height:auto;" alt="Ingredient Image" />
+                            }
+                            else
+                            {
+                                <span> No Image </span>
+                            }
+
+                        </td>
+
+
+                       
+                    </tr>
+                }
+            </tbody>
+
+        </table>
+
+
+</div>
