@@ -76,7 +76,7 @@ namespace AlchemyPages.Pages.Ingredients
             await context.SaveChangesAsync();
             return RedirectToPage("/Ingredients/Index");
 
-            return Page();
+            //return Page();
         }
 
     

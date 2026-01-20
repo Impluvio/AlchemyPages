@@ -67,6 +67,13 @@ namespace AlchemyPages.Services
     // - migration has been added, we need to update database once the player table has been removed - DONE 
     // - create logic to save and display images from c drive - DONE
 
+    //      15/08/2025 
+    //       |TO DO|
+    // - player edit page displays player ID as ingredient ID.
+    // - Create way for players to view their alchemy book
+    // - Get icons for different effects 
+    // - create player page
+    // - maybe create login for players / admin.
 
 
 }
