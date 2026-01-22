@@ -1,0 +1,23 @@
+﻿body 
+{
+    background: #2b2b2b;
+    font-family: "Old English Text MT", fantasy;
+}
+
+.paper 
+{
+    background: linear-gradient(#f8f3e6, #f4ecd8);
+    color: #3b2f2f;
+
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 3rem;
+
+    box-shadow:
+        0 0 0 1px rgba(0,0,0,0.2),
+        0 10px 30px rgba(0,0,0,0.5);
+
+    border-radius: 3px;
+}
+
+
