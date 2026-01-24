@@ -1,8 +1,71 @@
 ﻿body 
 {
     background: #2b2b2b;
-    font-family: "Old English Text MT", fantasy;
+    font-family: "EB Garamond", serif;
 }
+
+h1, h2, h3 {
+    font-family: "IM Fell English", serif;
+    letter-spacing: 0.05em;
+}
+
+.navbar {
+    background: #f4ecd8 !important;
+}
+
+a {
+    color: #7a1e1e;
+}
+
+    a:hover {
+        color: #a83a3a;
+        text-decoration: underline;
+    }
+
+
+.btn {
+    font-family: "IM Fell English", serif;
+    color: #f8f3e6;
+    border: 1px solid #3b2f2f;
+}
+
+.btn-primary {
+    background: #7a1e1e;
+}
+
+.btn-primary:hover {
+    background: #5e1414;
+}
+
+.btn-warning {
+    background: #2f3e4e;
+    border-color: #1f2a33;
+}
+
+.btn-warning:hover {
+    background: #24313d;
+}
+
+.btn-outline-primary {
+    background: #7a1e1e;
+    color: #f8f3e6;
+    border-color: #3b2f2f;
+}
+
+.btn-outline-primary {
+    background: transparent;
+    color: #7a1e1e;
+}
+
+.btn-danger {
+    background: #5a0f0f;
+    ;
+}
+
+.btn-danger:hover {
+    background: #3f0b0b;
+}
+
 
 .paper 
 {
